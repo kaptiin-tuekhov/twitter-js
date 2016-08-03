@@ -27,11 +27,11 @@
       {% endif %}
       <h3>All Tweets</h3>
       <!-- display tweets here -->
-      {% for tweet in tweets %}
       <ul id="tweet list">
+      {% for tweet in tweets %}
       <li><a href="/users/{{tweet.name}}">{{tweet.name}}</a> - {{tweet.content}}</li>
-      </ul>
       {% endfor %}
+      </ul>
 
 
 

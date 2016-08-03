@@ -92,7 +92,9 @@
         var list = document.getElementById("tweet list")
         console.log(list)
         var newtweet = document.createElement('li')
-        newtweet.innerHTML = "<a href='/users"+tweet.name+">"+tweet.name+"</a> - "+ tweet.content;
+        newtweet.innerHTML = '<a href="/users/'+tweet.name+'">'+tweet.name+'</a> - '+ tweet.content;
+        // newtweet.innerText = tweet.content;
+        console.log(newtweet);
         list.appendChild(newtweet);
 
 
